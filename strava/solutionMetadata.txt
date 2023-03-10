@@ -1,0 +1,16 @@
+"stravaQuickstarts.0002": {
+    "solutionExposure": "prod",
+    "name": "${Messages.solutionsHub.solutions.stravaQuickstarts.solutionName()}",
+    "description": "${Messages.solutionsHub.solutions.stravaQuickstarts.stackDescription()}",
+    "longDescription": {
+        "description": "${Messages.solutionsHub.solutions.stravaQuickstarts.longDescription()}"
+    },
+    "icon": {
+        "iconLine1": "Strava",
+        "iconLine2": "Data",
+        "iconLine3": "Dashboard"
+    },
+    "terraformVersion": "0.14.x",
+    "isFreeTier": true,
+	"categoryId": "0"
+}

@@ -1,0 +1,49 @@
+## Copyright © 2021, Oracle and/or its affiliates.
+## All rights reserved. The Universal Permissive License (UPL), Version 1.0 as shown at http://oss.oracle.com/licenses/upl
+## Database Development Tools - btspendo
+
+    title: ${Messages.solutionsHub.solutions.stravaQuickstarts.stackTitle()}
+    stackDescription: ${Messages.solutionsHub.solutions.stravaQuickstarts.stackDescription()}
+    schemaVersion: 1.0.0
+    version: "20210720"
+    locale: "en"
+
+    variableGroups:
+    - title: General Configuration
+      visible: false
+      variables:
+      - tenancy_ocid
+      - release
+      - region
+      - compartment_ocid
+
+    variables:
+
+      compartment_ocid:
+        type: oci:identity:compartment:id
+        required: true
+        visible: true
+        title: ${Messages.solutionsHub.solutions.stravaQuickstarts.variables.compartmentTitle()}
+        description: ${Messages.solutionsHub.solutions.stravaQuickstarts.variables.compartmentDescription()}
+
+      region:
+        type: oci:identity:region:name
+        required: true
+        visible: false
+
+
+    outputs:
+
+      dashboard_url:
+        title: ${Messages.solutionsHub.solutions.stravaQuickstarts.outputs.dashboardUrlTitle()}
+        displayText: ${Messages.solutionsHub.solutions.stravaQuickstarts.outputs.dashboardUrlDisplayText()}
+        type: link
+        visible: true
+
+      adb_password:
+        title: ${Messages.solutionsHub.solutions.stravaQuickstarts.outputs.adbPasswordTitle()}
+        displayText: ${Messages.solutionsHub.solutions.stravaQuickstarts.outputs.adbPasswordTitle()}
+        visible: true
+        sensitive: true
+
+    primaryOutputButton: dashboard_url
