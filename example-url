@@ -1,0 +1,22 @@
+ttps://github.com/oracle-devrel/terraform-oci-oracle-cloud-foundation/releases/download/v1.0.0/MovieStream_live_lab-RM.zip&zipUrlVariables={"tag": "movieapp","run_post_load_procedures":"true"} 
+
+https://cloud.oracle.com/resourcemanager/stacks/create?region=home&zipUrl=https://github.com/oracle-devrel/terraform-oci-oracle-cloud-foundation/releases/download/v1.0.0/MovieStream_live_lab-RM.zip&zipUrlVariables={"tag": "graph-get-started","run_post_load_procedures":"false","db_name":"adblivelab"} 
+
+
+
+https://cloud.oracle.com/resourcemanager/stacks/create?region=home&zipUrl=https://github.com/oracle-devrel/terraform-oci-oracle-cloud-foundation/releases/download/v1.0.0/Oracle-MovieStream-RM.zip
+
+
+https://cloud.oracle.com/resourcemanager/stacks/create?region=home&zipUrl=https://martygubar.github.io/adb/movie-stream-story-lite/setup-environment/MovieStream_live_lab-RM.zip&zipUrlVariables={"tag": "movieapp","run_post_load_procedures":"true"} 
+
+http://127.0.0.1:5500/adb/movie-stream-story-lite/setup-environment/MovieStream_live_lab-RM.zip
+
+https://github.oracle.com/martygubar/adb/movie-stream-story-lite/setup-environment/MovieStream_live_lab-RM.zip
+
+https://martygubar.github.io/adb/movie-stream-story-lite/setup-environment/MovieStream_live_lab-RM.zip
+
+
+https://cloud.oracle.com/resourcemanager/stacks/create?region=home&zipUrl=https://objectstorage.us-sanjose-1.oraclecloud.com/n/adwc4pm/b/building_blocks_utilities/o/MovieStream_live_lab-RM.zip
+
+
+https://cloud.oracle.com/resourcemanager/stacks/create?region=home&zipUrl=https://github.com/oracle-devrel/terraform-oci-oracle-cloud-foundation/releases/download/v1.0.0/Deploy-Autonomous-Database-and-the-MovieStream-data-sets-for-Oracle-LiveLabs-RM.zip&zipUrlVariables={"tag": "end-to-end","run_post_load_procedures":"true","db_name":"moviestreamworkshop"} 
