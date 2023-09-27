@@ -16,8 +16,8 @@ resource "null_resource" "sqlcl-create-usr" {
                 echo 'Start running tables.sql script to install data sets'
                 sql -cloudconfig wallet_${var.db_name}.zip moviestream/watchS0meMovies#@'${local.conn_db}' @./tables.sql
 
-                echo 'Start running install-apex-ask-oracle-app.sql script to install the apex app'
-                sql -cloudconfig wallet_${var.db_name}.zip moviestream/watchS0meMovies#@'${local.conn_db}' @./scripts/install-apex-ask-oracle-app.sql
+                echo 'Start running install-apex-app.sql script to install the apex app'
+                sql -cloudconfig wallet_${var.db_name}.zip moviestream/watchS0meMovies#@'${local.conn_db}' @./scripts/install-apex-app.sql
 
                 rm -rf tables.sql     
             EOT
