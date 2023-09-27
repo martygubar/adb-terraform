@@ -39,12 +39,16 @@ output "apex_url" {
   value = [for b in oci_database_autonomous_database.adw : b.connection_urls.0.apex_url]
 }
 
+output "select_ai_demo_url" {
+  value = join("", [lower(trimsuffix(join("\n", [for b in oci_database_autonomous_database.adw : b.connection_urls.0.graph_studio_url]), "/graphstudio/")),"/ords/r/moviestream/chatdb"])
+}
+
 output "machine_learning_user_management_url" {
   value = [for b in oci_database_autonomous_database.adw : b.connection_urls.0.machine_learning_user_management_url]
 }
 
 output "adb_wallet_content" {
-value = oci_database_autonomous_database_wallet.autonomous_database_wallet["adw"].content
+  value = oci_database_autonomous_database_wallet.autonomous_database_wallet["adw"].content
 }
 
 output "database_fully_qualified_name" {

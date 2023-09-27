@@ -1,8 +1,8 @@
 # Copyright © 2023, Oracle and/or its affiliates.
 # All rights reserved. Licensed under the Universal Permissive License (UPL), Version 1.0 as shown at https://oss.oracle.com/licenses/upl.
 
-title: "Deploy Oracle MovieStream for LiveLabs"
-stackDescription: "Deploy Oracle MovieStream for LiveLabs"
+title: "Deploy ChatDB - Autonomous Database Select AI demonstration"
+stackDescription: "Creates an ADB with MovieStream data plus the ChatDB APEX demo app"
 schemaVersion: 1.1.0
 version: "20230112"
 locale: "en"
@@ -217,6 +217,10 @@ outputs:
     type: link
     title: url
     visible: true
+  database_fully_qualified_name:
+    type: string
+    title: database_fully_qualified_name
+    visible: true      
   graph_studio_url:
     type: link
     title: graph_studio_url
@@ -229,10 +233,10 @@ outputs:
     type: link
     title: apex_url
     visible: true    
-  database_fully_qualified_name:
-    type: string
-    title: database_fully_qualified_name
-    visible: true    
+  select_ai_demo_url:
+    type: link
+    title: select_ai_demo_url
+    visible: true      
   adb_admin_password:
     type: string
     title: adb_admin_password

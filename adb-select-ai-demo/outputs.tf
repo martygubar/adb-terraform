@@ -23,6 +23,10 @@ output "ADW_Database_db_connection" {
   value = module.adw_ecpus.db_connection
 }
 
+output "database_fully_qualified_name" {
+  value = module.adw_ecpus.database_fully_qualified_name
+}
+
 output "ADW_Database_ip" {
   value = module.adw_ecpus.private_endpoint_ip
 }
@@ -43,6 +47,6 @@ output "apex_url" {
   value = module.adw_ecpus.apex_url
 }
 
-output "database_fully_qualified_name" {
-  value = module.adw_ecpus.database_fully_qualified_name
+output "select_ai_demo_url" {
+  value = module.adw_ecpus.select_ai_demo_url
 }
